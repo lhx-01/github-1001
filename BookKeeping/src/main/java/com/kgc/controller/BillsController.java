@@ -33,7 +33,6 @@ public class BillsController {
             criteria.andBillTimeBetween(stratbillTime,endbillTime);
         }
         List<Bills> bills = billsService.selectByExample2(example);
-
         model.addAttribute("bills",bills);
         return "index";
     }
@@ -47,5 +46,9 @@ public class BillsController {
         } else {
             return "";
         }
+    }
+    @RequestMapping("/ddddd")
+    public String aaaaa(){
+        return "";
     }
 }
